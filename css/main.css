@@ -15,7 +15,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-
+img.mobile {
+  width: 360px;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -198,6 +200,17 @@ header .container .text h1 {
   text-transform: uppercase;
   font-size: 40px;
 }
+@media (max-width: 768px) {
+  .creations .container .headin h1 {
+    margin-left: 20px;
+  }
+  .creations .container .box .content p {
+    bottom: 20px;
+    left: 40px;
+    width: 220px;
+  }
+}
+
 .creations .container .headin input {
   background-color: white;
   width: 160px;
@@ -235,6 +248,14 @@ header .container .text h1 {
   bottom: 40px;
   left: 40px;
 }
+@media (max-width: 768px) {
+  .creations .container .box .content p {
+    bottom: 20px;
+    left: 40px;
+    width: 220px;
+  }
+}
+
 .creations .container .box .content img.mobile {
   display: none;
 }
@@ -244,6 +265,9 @@ header .container .text h1 {
   }
   .creations .container .box .content img.desktop {
     display: none;
+  }
+  .creations .container .box {
+    overflow: hidden;
   }
   .creations .container .box .content img.mobile {
     display: block;
@@ -330,23 +354,24 @@ footer .container .bottom ul li:hover::before {
   footer .container .headin {
     display: block;
   }
-  footer .container .headin .icons{
+  footer .container .headin .icons {
     transform: translateY(240px);
     -webkit-transform: translateY(240px);
     -moz-transform: translateY(240px);
     -ms-transform: translateY(240px);
     -o-transform: translateY(240px);
-}
+    margin-left: 20px;
+  }
   footer .container .bottom {
     display: block;
   }
-  footer .container .bottom .nav{
+  footer .container .bottom .nav {
     transform: translateY(-45px);
     -webkit-transform: translateY(-45px);
     -moz-transform: translateY(-45px);
     -ms-transform: translateY(-45px);
     -o-transform: translateY(-45px);
-}
+  }
   footer .container .bottom ul {
     flex-direction: column;
     position: absolute;
@@ -357,15 +382,15 @@ footer .container .bottom ul li:hover::before {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
-footer .container .bottom ul li{
-  margin-bottom: 20px;
-}
+  }
+  footer .container .bottom ul li {
+    margin-bottom: 20px;
+  }
   footer .container .bottom p {
     transform: translateY(250px);
     -webkit-transform: translateY(250px);
     -moz-transform: translateY(250px);
     -ms-transform: translateY(250px);
     -o-transform: translateY(250px);
-}
+  }
 }
